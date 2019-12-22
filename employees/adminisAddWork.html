@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>add users</title>
+    <title>add Pekerjaan</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../assets/vendors/iconfonts/ionicons/css/ionicons.css">
@@ -38,9 +38,11 @@
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center">
                 <ul class="navbar-nav">
-                    <li class="nav-item font-weight-semibold ">Dashboard Admmin area</li>
+                    <li class="nav-item font-weight-semibold">Dashboard karyawan { <span
+                            class="text-warning">administrasi</span> }
+                    </li>
                 </ul>
-                <form class="ml-auto search-form " action="#">
+                <form class="ml-auto search-form d-none d-md-block" action="#">
                     <div class="form-group">
                         <input type="search" class="form-control" placeholder="Search Here">
                     </div>
@@ -75,113 +77,101 @@
                             <div class="page-header-toolbar">
 
                                 <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
-                                    <a href="Dashboard.html" class="btn btn-secondary">Progress Karyawan</a>
+                                    <a href="lock_progress.html" class="btn btn-secondary">Daftar Pekerjaan</a>
                                 </div>
                                 <div class="btn-group toolbar-item">
-                                    <a href="User_Set.html" class="btn btn-primary">List Users</a>
+                                    <a href="history_work.html" class="btn btn-secondary">History Pekerjaan</a>
                                 </div>
                                 <div class="btn-group toolbar-item">
-                                    <a href="Pekerjaan_data.html" class="btn btn-secondary">List Pekerjaan</a>
-                                </div>
-                                <div class="btn-group toolbar-item">
-                                    <a href="category_acces.html" class="btn btn-secondary">Hak Akses</a>
+                                    <a href="adminisAddWork.html" class="btn btn-primary">Tambah Pekerjaan</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <hr>
                     <!-- Page Title Header Ends-->
-                    <div class="row" style="min-height: 80vh">
-                        <div class="col-10 grid-margin mx-auto">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">add user</h4>
-                                    <form class="form-sample">
-                                        <p class="card-description"> Personal info </p>
-                                        <div class="row">
-                                            <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-8 d-flex align-items-stretch grid-margin mx-auto">
+                            <div class="row flex-grow">
+                                <div class="col-12 stretch-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tambah Pekerjaan</h4>
+                                            <p class="card-description"> Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing elit. Facilis, laudantium. </p>
+                                            <form class="forms-sample">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Full Name</label>
+                                                    <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Nama
+                                                        Pekerjaan</label>
                                                     <div class="col-sm-9">
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" id="exampleInputEmail2">
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">email</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" class="form-control">
+                                                    <label for="exampleInputEmail2" class="col-sm-3 col-form-label">No
+                                                        SPK / Kontrak</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="exampleInputEmail2">
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="form-radio form-radio-flat">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="flatRadios1" id="flatRadios1" value=""
+                                                                    checked=""> Non Kontrak<i
+                                                                    class="input-helper"></i></label>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">address</label>
-                                                    <div class="col-sm-9">
-                                                        <textarea name="" id="" class="form-control" cols="30"
-                                                            rows="2"></textarea>
+                                                    <label for="exampleInputEmail2"
+                                                        class="col-sm-3 col-form-label">Mulai Pekerjaan</label>
+                                                    <div class="col-sm-4">
+                                                        <input type="date" class="form-control" id="exampleInputEmail2">
+                                                    </div>
+                                                    <label for="exampleInputEmail2"
+                                                        class="col-sm-2 col-form-label">Selesai Pekerjaan</label>
+                                                    <div class="col-sm-3">
+                                                        <input type="date" class="form-control" id="exampleInputEmail2">
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">phone number</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="number" class="form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">work start</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="date" name="" class="form-control" id="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Status</label>
+                                                    <label for="exampleInputEmail2"
+                                                        class="col-sm-3 col-form-label">Pemberi
+                                                        Pekerjaan</label>
                                                     <div class="col-sm-9">
                                                         <select name="" id="" class="form-control">
-                                                            <option value="">active</option>
-                                                            <option value="">non active</option>
+                                                            <option value="">PT PLN A</option>
+                                                            <option value="">PT PLN B</option>
+                                                            <option value="">PT PLN C</option>
                                                         </select>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Kategori Akses</label>
+                                                    <label for="exampleInputEmail2"
+                                                        class="col-sm-3 col-form-label">Lokasi
+                                                        Kerja</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="exampleInputEmail2">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="exampleInputEmail2"
+                                                        class="col-sm-3 col-form-label">Jenis
+                                                        Pekerjaan</label>
                                                     <div class="col-sm-9">
                                                         <select name="" id="" class="form-control">
-                                                            <option value="">Direktor</option>
-                                                            <option value="">administrasi </option>
-                                                            <option value="">Engginering</option>
-                                                            <option value="">Logistic</option>
-                                                            <option value="">Pelaksana Pekerjaan</option>
+                                                            <option value="">Pengadaan Barang</option>
+                                                            <option value="">Pengadaan Jasa</option>
+                                                            <option value="" onselect="">Pengadaan Barang dan Jasa</option>
                                                         </select>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label"></label>
-                                                    <div class="sm-9 ml-3">
-                                                        <button class="btn btn-success">Simpan</button>
-                                                        <button class="btn btn-dark">Discard</button>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                <button type="submit" class="btn btn-success mr-2">Submit</button>
+                                                <button class="btn btn-light">Cancel</button>
+                                            </form>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>

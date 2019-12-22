@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../assets/vendors/iconfonts/ionicons/css/ionicons.css">
     <link rel="stylesheet" href="../assets/vendors/iconfonts/typicons/src/font/typicons.css">
-    <link rel="stylesheet" href="../assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
+    <!-- <link rel="stylesheet" href="../assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css"> -->
     <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
     <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.addons.css">
     <link rel="stylesheet" href="../assets/vendors/iconfonts/font-awesome/css/font-awesome.min.css">
@@ -32,38 +32,39 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-              <a class="navbar-brand brand-logo" href="#">
-                <img src="../assets/images/logo.svg" alt="logo" /> </a>
-              <a class="navbar-brand brand-logo-mini" href="index.html">
-                <img src="../assets/images/logo-mini.svg" alt="logo" /> </a>
+                <a class="navbar-brand brand-logo" href="#">
+                    <img src="" alt="logo" /> </a>
+                <a class="navbar-brand brand-logo-mini" href="index.html">
+                    <img src="" alt="logo" /> </a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center">
-              <form class="ml-auto search-form d-none d-md-block" action="#">
-                <div class="form-group">
-                  <input type="search" class="form-control" placeholder="Search Here">
-                </div>
-              </form>
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
-                  <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                    <img class="img-xs rounded-circle" src="../assets/images/medi.jpg" alt="Profile image"> </a>
-                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
-                    <div class="dropdown-header text-center">
-                      <img class="img-md rounded-circle" src="../assets/images/medi.jpg" alt="Profile image">
-                      <p class="mb-1 mt-3 font-weight-semibold">Medicare</p>
-                      <p class="font-weight-light text-muted mb-0">mcare@gmail.com</p>
+                <ul class="navbar-nav">
+                    <li class="nav-item font-weight-semibold">Dashboard Admmin area</li>
+                </ul>
+                <form class="ml-auto search-form d-none d-md-block" action="#">
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search Here">
                     </div>
-                    <a href="#" class="dropdown-item">My Profile<i class="dropdown-item-icon ti-dashboard"></i></a>
-                    <a href="../index.html" class="dropdown-item">Logout<i class="dropdown-item-icon ti-power-off"></i></a>
-                  </div>
-                </li>
-              </ul>
-              <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
-                data-toggle="offcanvas">
-                <span class="mdi mdi-menu"></span>
-              </button>
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown user-dropdown">
+                        <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown">
+                            <img class="img-xs rounded-circle" src="../assets/images/medi.jpg" alt="Profile image"> </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                            <div class="dropdown-header text-center">
+                                <img class="img-md rounded-circle" src="../assets/images/medi.jpg" alt="Profile image">
+                                <p class="mb-1 mt-3 font-weight-semibold">Medicare</p>
+                                <p class="font-weight-light text-muted mb-0">mcare@gmail.com</p>
+                            </div>
+                            <a href="#" class="dropdown-item">My Profile<i
+                                    class="dropdown-item-icon ti-dashboard"></i></a>
+                            <a href="../index.html" class="dropdown-item">Logout<i
+                                    class="dropdown-item-icon ti-power-off"></i></a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </nav>
+        </nav>
         <!-- partial -->
         <div class="container-fluid page-body-wrapper">
             <!-- partial -->
@@ -71,165 +72,178 @@
                 <div class="content-wrapper">
                     <!-- Page Title Header Starts-->
                     <div class="row page-title-header">
-                        <div class="col-12">
-                          <div class="page-header">
-                            <h4 class="page-title">Dashboard admin area</h4>
-                          </div>
-                        </div>
                         <div class="col-md-12 text-center">
-                          <div class="page-header-toolbar">
-            
-                            <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
-                              <a href="Dashboard.html" class="btn btn-secondary">Progress Karyawan</a>
+                            <div class="page-header-toolbar">
+
+                                <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
+                                    <a href="Dashboard.html" class="btn btn-secondary">Progress Karyawan</a>
+                                </div>
+                                <div class="btn-group toolbar-item">
+                                    <a href="User_Set.html" class="btn btn-secondary">List Users</a>
+                                </div>
+                                <div class="btn-group toolbar-item">
+                                    <a href="Pekerjaan_data.html" class="btn btn-secondary">List Pekerjaan</a>
+                                </div>
+                                <div class="btn-group toolbar-item">
+                                    <a href="category_acces.html" class="btn btn-primary">Hak Akses</a>
+                                </div>
                             </div>
-                            <div class="filter-wrapper">
-                              <a href="User_Set.html" class="btn btn-secondary">List Users</a>
-                            </div>
-                            <div class="filter-wrapper">
-                              <a href="Pekerjaan_data.html" class="btn btn-secondary">List Pekerjaan</a>
-                            </div>
-                            <div class="filter-wrapper">
-                              <a href="category_acces.html" class="btn btn-primary">Hak Akses</a>
-                            </div>
-                          </div>
                         </div>
-                      </div>
-                      <hr>
+                    </div>
+                    <hr>
                     <!-- Page Title Header Ends-->
                     <div class="row">
-                        <div class="col-md-9 d-flex align-items-stretch grid-margin mx-auto">
-                            <div class="row flex-grow">
-                                <div class="col-12 grid-margin">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Horizontal Two column</h4>
-                                            <form class="form-sample">
-                                                <p class="card-description"> Personal info </p>
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr style="overflow-x:auto;">
-                                                            <th>Nama Jabatan</th>
-                                                            <th>Add</th>
-                                                            <th>Update</th>
-                                                            <th>Delete</th>
-                                                            <th>Show</th>
-                                                            <th>Print</th>
-                                                            <th>Service</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td><input type="text" name="" class="form-control" id=""></td>
-                                                            <td>
-                                                                <div class="form-check form-check-flat">
-                                                                    <label class="form-check-label">
-                                                                        <input type="checkbox" class="form-check-input"> yes <i class="input-helper"></i>
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="form-check form-check-flat">
-                                                                    <label class="form-check-label">
-                                                                        <input type="checkbox" class="form-check-input"> yes <i class="input-helper"></i>
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="form-check form-check-flat">
-                                                                    <label class="form-check-label">
-                                                                        <input type="checkbox" class="form-check-input"> yes <i class="input-helper"></i>
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="form-check form-check-flat">
-                                                                    <label class="form-check-label">
-                                                                        <input type="checkbox" class="form-check-input"> yes <i class="input-helper"></i>
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="form-check form-check-flat">
-                                                                    <label class="form-check-label">
-                                                                        <input type="checkbox" class="form-check-input"> yes <i class="input-helper"></i>
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="form-check form-check-flat">
-                                                                    <label class="form-check-label">
-                                                                        <input type="checkbox" class="form-check-input"> yes <i class="input-helper"></i>
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <button type="submit" class="btn btn-primary">Simpan</button>
-                                                            </td>
-
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </form>
-                                        </div>
-                                    </div>
+                        <div class="col-lg-9 grid-margin stretch-card mx-auto">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Set Permision</h4>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                                    <form class="form-sample">
+                                        <table class="table table-hover table-striped table-responsive">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 500px;">Nama Jabatan</th>
+                                                    <th style="width: 100px;">Add</th>
+                                                    <th style="width: 100px;">Update</th>
+                                                    <th style="width: 100px;">Delete</th>
+                                                    <th style="width: 100px;">Show</th>
+                                                    <th style="width: 100px;">Print</th>
+                                                    <th style="width: 150px;">Service</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="text" class="form-control" id="name_new_ca">
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-check form-check-flat">
+                                                            <label class="form-check-label">
+                                                                <input id="add_job_new_ca" type="checkbox" class="form-check-input">
+                                                                yes <i class="input-helper"></i>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-check form-check-flat">
+                                                            <label class="form-check-label">
+                                                                <input id="update_job_new_ca" type="checkbox" class="form-check-input">
+                                                                yes <i class="input-helper"></i>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-check form-check-flat">
+                                                            <label class="form-check-label">
+                                                                <input id="delete_job_new_ca" type="checkbox" class="form-check-input">
+                                                                yes <i class="input-helper"></i>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-check form-check-flat">
+                                                            <label class="form-check-label">
+                                                                <input id="show_job_new_ca" type="checkbox" class="form-check-input">
+                                                                yes <i class="input-helper"></i>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-check form-check-flat">
+                                                            <label class="form-check-label">
+                                                                <input id="print_job_new_ca" type="checkbox" class="form-check-input">
+                                                                yes <i class="input-helper"></i>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-check form-check-flat">
+                                                            <label class="form-check-label">
+                                                                <input id="service_job_new_ca" type="checkbox" class="form-check-input">
+                                                                yes <i class="input-helper"></i>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button type="submit" class="btn btn-primary" id="btnSaveCa">Simpan</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
                                 </div>
-                                <div class="col-12">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Data Permision Table</h4>
-                                            <p class="card-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, explicabo? </p>
-                                            <table class="table">
-                                                <thead>
-                                                    <tr style="overflow-x:auto;">
-                                                        <th>Nama Jabatan</th>
-                                                        <th>Add</th>
-                                                        <th>Update</th>
-                                                        <th>Delete</th>
-                                                        <th>Show</th>
-                                                        <th>Print</th>
-                                                        <th>Service</th>
-                                                        <th>Actions</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Direktor</td>
-                                                        <td><label class="badge badge-success">yes</label></td>
-                                                        <td><label class="badge badge-success">yes</label></td>
-                                                        <td><label class="badge badge-success">yes</label></td>
-                                                        <td><label class="badge badge-success">yes</label></td>
-                                                        <td><label class="badge badge-success">yes</label></td>
-                                                        <td><label class="badge badge-success">yes</label></td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-warning btn-sm btn-fw"><i class="fa fa-pencil"></i>edit</button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Pengawas Pekerjaan</td>
-                                                        <td><label class="badge badge-danger">no</label></td>
-                                                        <td><label class="badge badge-danger">no</label></td>
-                                                        <td><label class="badge badge-danger">no</label></td>
-                                                        <td><label class="badge badge-success">yes</label></td>
-                                                        <td><label class="badge badge-success">yes</label></td>
-                                                        <td><label class="badge badge-danger">no</label></td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-warning btn-sm btn-fw"><i class="fa fa-pencil"></i>edit</button>
-                                                        </td>
-                                                    </tr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-9 grid-margin stretch-card mx-auto">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Data Permision</h4>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                                    <table class="table table-hover table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th style="width: 400px;">Nama Jabatan</th>
+                                                <th style="width: 100px;">Add</th>
+                                                <th style="width: 100px;">Update</th>
+                                                <th style="width: 100px;">Delete</th>
+                                                <th style="width: 100px;">Show</th>
+                                                <th style="width: 100px;">Print</th>
+                                                <th style="width: 100px;">Service</th>
+                                                <th style="width: 100px;">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Direktor</td>
+                                                <td><label class="badge badge-success">yes</label></td>
+                                                <td><label class="badge badge-success">yes</label></td>
+                                                <td><label class="badge badge-success">yes</label></td>
+                                                <td><label class="badge badge-success">yes</label></td>
+                                                <td><label class="badge badge-success">yes</label></td>
+                                                <td><label class="badge badge-success">yes</label></td>
+                                                <td>
+                                                        <button type="button" class="btn btn-info btn-sm "><i class="fa fa-eye"></i>view</button>
+                                                        <button type="button" class="btn btn-warning btn-sm "><i
+                                                            class="fa fa-pencil"></i>edit</button>
+                                                        <button type="button" class="btn btn-danger btn-sm "><i
+                                                            class="fa fa-trash"></i>delete</button>
+                                                      </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Pengawas Pekerjaan</td>
+                                                <td><label class="badge badge-danger">no</label></td>
+                                                <td><label class="badge badge-danger">no</label></td>
+                                                <td><label class="badge badge-danger">no</label></td>
+                                                <td><label class="badge badge-success">yes</label></td>
+                                                <td><label class="badge badge-success">yes</label></td>
+                                                <td><label class="badge badge-danger">no</label></td>
+                                                <td>
+                                                        <button type="button" class="btn btn-info btn-sm "><i class="fa fa-eye"></i>view</button>
+                                                        <button type="button" class="btn btn-warning btn-sm "><i
+                                                            class="fa fa-pencil"></i>edit</button>
+                                                        <button type="button" class="btn btn-danger btn-sm "><i
+                                                            class="fa fa-trash"></i>delete</button>
+                                                      </td>
+                                            </tr>
 
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                                        </tbody>
+                                    </table>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
-                
+
                 <!-- partial -->
             </div>
             <!-- main-panel ends -->
@@ -238,8 +252,9 @@
     </div>
     <footer class="footer">
         <div class="container-fluid clearfix">
-            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 All rights reserved.</span>
-    
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 All rights
+                reserved.</span>
+
         </div>
     </footer>
     <!-- container-scroller -->
@@ -251,10 +266,13 @@
     <!-- End plugin js for this page-->
     <!-- inject:js -->
     <script src="../assets/js/shared/off-canvas.js"></script>
-    <script src="assets/js/shared/misc.js"></script>
+    <!-- <script src="assets/js/shared/misc.js"></script> -->
     <!-- endinject -->
     <!-- Custom js for this page-->
     <script src="../assets/js/demo_1/dashboard.js"></script>
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/konsumsi_api.js"></script>
+    <script src="../assets/js/logic.js"></script>
     <!-- End custom js for this page-->
 </body>
 
