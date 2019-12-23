@@ -18,7 +18,7 @@ function login(username, password) {
             localStorage.setItem('root', res['ca'])
         },
         error: function (xhr, ajaxOptions, thrownError) {
-            window.location.href = "/ui"
+            window.location.href = "/ui/index.html"
         },
         dataType: 'json'
     });
