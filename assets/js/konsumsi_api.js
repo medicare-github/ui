@@ -15,7 +15,7 @@ function login(username, password) {
                 window.location.href = "/ui/admin_area/Dashboard.html"
             }
             localStorage.setItem('token', res['token'])
-            localStorage.setItem('director', res['ca'])
+            localStorage.setItem('root', res['ca'])
         },
         error: function (xhr, ajaxOptions, thrownError) {
             window.location.href = "/ui"
