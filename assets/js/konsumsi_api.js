@@ -11,7 +11,7 @@ function login(username, password) {
             "password": password
         }),
         success: (res) => {
-            if(res['ca'] == 'director'){
+            if(res['ca'] == 'root'){
                 window.location.href = "/ui/admin_area/Dashboard.html"
             }
             localStorage.setItem('token', res['token'])
