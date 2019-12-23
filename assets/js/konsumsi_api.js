@@ -12,13 +12,13 @@ function login(username, password) {
         }),
         success: (res) => {
             if(res['ca'] == 'root'){
-                window.location.href = "https://medicare-github.github.io/ui/admin_area/Dashboard.html"
+                window.location.href = "/ui/admin_area/Dashboard.html"
             }
             localStorage.setItem('token', res['token'])
             localStorage.setItem('director', res['ca'])
         },
         error: function (xhr, ajaxOptions, thrownError) {
-            window.location.href = "/https://medicare-github.github.io/ui/"
+            window.location.href = "/ui"
         },
         dataType: 'json'
     });
